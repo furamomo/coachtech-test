@@ -13,3 +13,10 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+
+docker/mysql/data/
+docker/mysql/data/*
+/src/vendor/
+/src/node_modules/
+/src/storage/*
+!/src/storage/.gitignore
