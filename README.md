@@ -4,7 +4,7 @@
 ## 環境構築
 
  Docker ビルド
-・git clone: git@github.com:furamomo/coachtech-test.git
+・git clone git@github.com:furamomo/coachtech-test.git
 ・docker-compose up -d --build
 
  Laravel 初期設定
