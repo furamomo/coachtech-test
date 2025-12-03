@@ -25,7 +25,7 @@
                     お名前
                 </label>
 
-                <input type="text" id="name" name="name" placeholder="例: 山田 太郎" value="{{ old('name') }}" class="register-form__input {{ $errors->has('password') ? 'input-error' : '' }}">
+                <input type="text" id="name" name="name" placeholder="例: 山田 太郎" value="{{ old('name') }}" class="register-form__input {{ $errors->has('name') ? 'input-error' : '' }}">
 
                 @if ($errors->has('name'))
                     <ul class="register-form__error-list">
