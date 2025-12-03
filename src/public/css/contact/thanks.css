@@ -1,0 +1,55 @@
+/*ヘッダー非表示*/
+.header--hidden {
+    display: none;
+}
+
+/* 全体 */
+.thanks-page {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    padding: 100px 0;
+    text-align: center;
+    z-index: 1;
+}
+
+/* 背景の文字 */
+.thanks-page::before {
+    content: "Thank you";
+    font-size: 250px;
+    color: #f7f4f1;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+/* メッセージ */
+.thanks-page__content {
+    position: absolute;
+    margin-top: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.thanks-page__text {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    white-space: nowrap;
+}
+
+/* HOMEボタン */
+.thanks-page__button-text {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #8e6e53;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}

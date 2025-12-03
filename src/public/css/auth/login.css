@@ -1,0 +1,98 @@
+/* 全体背景 */
+body {
+    background-color: #f3ece5;
+}
+
+/* ページ全体中央寄せ */
+.content-inner {
+    max-width: 1000px;
+    margin: 50px auto 140px;
+}
+
+/* カード */
+.login-form {
+    background: #fff;
+    width: 700px;
+    margin: 0 auto;
+    padding: 80px 130px;
+    border-radius: 10px;
+    border: 2px solid #e2ddd7;
+}
+
+/* ラベル */
+.login-form__title {
+    display: block;
+    font-size: 20px;
+    color: #6b5648;
+    margin-bottom: 15px;
+}
+
+/* 入力欄 */
+
+.login-form__group {
+    margin-bottom: 50px;
+}
+
+.login-form__input {
+    width: 100%;
+    padding: 18px 20px;
+    background: #f4f1ee;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #6b5648;
+}
+
+.login-form__input::placeholder {
+    color: #c7beb6;
+}
+
+input:-webkit-autofill,
+select:-webkit-autofill,
+textarea:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px #f9f7f5 inset;
+    -webkit-text-fill-color: #6b5648;
+}
+
+.login-form__input:hover {
+    background-color: #efebe8;
+}
+
+
+/* エラー文 */
+.login-form__error-list {
+    margin-top: 8px;
+    padding-left: 18px;
+    color: #d9534f;
+    font-size: 14px;
+}
+
+.input-error {
+    border: 1px solid #d9534f;
+    background: #fdeaea;
+}
+
+/* ボタン */
+
+.login-form__button {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.login-form__button-input {
+    display: block;
+    margin: 0 auto;
+    width: 170px;
+    padding: 14px 0;
+    background-color: #8b6f57;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form__button:hover {
+    opacity: 0.85;
+}

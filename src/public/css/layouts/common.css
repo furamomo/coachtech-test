@@ -1,0 +1,66 @@
+/* フォーム全体 */
+body {
+    font-family: serif;
+    color: #6b5a4a;
+    /* 優しいブラウン */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ヘッダー */
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e0db;
+    padding: 20px 0;
+}
+
+.header__inner {
+    max-width: 1500px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.header__title-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    color: #8e6e53;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.header__button {
+    font-size: 0.9rem;
+}
+
+.header__button-text {
+    font-family: serif;
+    vertical-align: middle;
+    color: #8e6e53;
+    text-decoration: none;
+    border: 1px solid #d6cfc8;
+    padding: 6px 14px;
+}
+
+.header__button-text:hover {
+    background: #f3efea;
+}
+
+
+/* 共通ページタイトル */
+.content__title-text {
+    text-align: center;
+    font-size: 30px;
+    color: #8e6e53;
+    margin: 40px 0 30px;
+}

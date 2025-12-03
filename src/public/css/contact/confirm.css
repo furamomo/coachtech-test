@@ -1,0 +1,66 @@
+/* テーブル全体 */
+.confirm-table {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto 40px;
+    border-collapse: collapse;
+    background: #fff;
+    font-size: 14px;
+}
+
+/* 行 */
+.confirm-table__row {
+    border-bottom: 1px solid #e6dfd8;
+}
+
+/* 項目名 */
+.confirm-table__header {
+    width: 200px;
+    background: #b8a593;
+    color: #fff;
+    padding: 18px 35px;
+    text-align: left;
+    font-weight: 600;
+    vertical-align: top;
+    border: 1.5px solid #ece8e3;
+}
+
+/* データ欄 */
+.confirm-table__data {
+    padding: 18px 35px;
+    color: #7b6a58;
+    border: 1.5px solid #ece8e3;
+    vertical-align: top;
+}
+
+/* ボタン */
+.confirm-actions {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: last baseline;
+}
+
+.confirm-actions__button {
+    display: inline-block;
+    padding: 10px 35px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+.confirm-actions__button--primary {
+    background: #8e6e53;
+    color: #fff;
+}
+
+.confirm-actions__button--back {
+    background: none;
+    border: none;
+    color: #8e6e53;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+}

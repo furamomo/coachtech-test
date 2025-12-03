@@ -1,0 +1,195 @@
+/* 共通レイアウト */
+
+.content-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #8e6e53;
+    font-size: 15px;
+}
+
+
+.contact-form__group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+
+.contact-form__title {
+    width: 25%;
+    padding-top: 12px;
+    font-weight: 500;
+}
+
+.required {
+    color: #d46a6a;
+}
+
+
+.contact-form__field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/*  入力欄 */
+
+.contact-form__input,
+.contact-form__select,
+.contact-form__textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    background: #f7f6f5;
+    font-size: 15px;
+    color: #8e6e53;
+    outline: none;
+}
+
+
+input:-webkit-autofill,
+select:-webkit-autofill,
+textarea:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px #f9f7f5 inset;
+    -webkit-text-fill-color: #6b5648;
+}
+
+.contact-form__input:hover,
+.contact-form__textarea:hover,
+.contact-form__select:hover {
+    background-color: #efebe8;
+}
+
+
+/* エラー */
+.input-error {
+    border: 1px solid #dd6b55;
+    background: #ffecec;
+}
+
+.contact-form__error-list {
+    margin: 6px 0 0 0;
+    padding-left: 20px;
+    color: #dd6b55;
+    font-size: 14px;
+}
+
+.contact-form__error-item {
+    list-style: disc;
+    margin-left: 10px;
+}
+
+/*  名前・電話番号 */
+
+.contact-form__row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.content-form__row--name {
+    display: block;
+    width: 75%;
+}
+
+.contact-form__input-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form__input-name {
+    width: 45%;
+}
+
+.contact-form__error-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form__error {
+    width: 45%;
+}
+
+.contact-form__hyphen {
+    font-size: 20px;
+    color: #8e6e53;
+    display: flex;
+}
+
+
+/*  性別 */
+
+.contact-form__row--gender {
+    display: flex;
+    gap: 30px;
+    padding: 12px 0;
+}
+
+.contact-form__row--gender input[type="radio"] {
+    accent-color: #6b5648;
+}
+
+/*  セレクト  */
+
+.contact-form__wrapper {
+    position: relative;
+    width: 50%;
+}
+
+.contact-form__select {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #f7f6f5;
+    color: #8e6e53;
+}
+
+/* ▼マーク */
+.contact-form__wrapper::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    width: 0;
+    height: 0;
+    transform: translateY(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #c5b8ae;
+    pointer-events: none;
+}
+
+.contact-form__select:has(option[value=""]:checked) {
+    color: #c5b8ae;
+}
+
+.contact-form__select.input-error {
+    background: #fceaea;
+    border-color: #e99b9b;
+}
+
+/* テキストエリア */
+
+.contact-form__textarea {
+    resize: vertical;
+}
+
+
+/* 送信ボタン */
+
+.contact-form__submit {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-form__button {
+    background: #8e6e53;
+    color: #fff;
+    padding: 14px 34px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.contact-form__button:hover {
+    opacity: 0.9;
+}

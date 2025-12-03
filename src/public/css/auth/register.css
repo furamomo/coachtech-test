@@ -1,0 +1,98 @@
+/* 背景 */
+body {
+    background-color: #f3ece5;
+}
+
+/* 中央寄せ */
+.content-inner {
+    max-width: 1000px;
+    margin: 90px auto 140px;
+}
+
+/* 白いカード枠 */
+.register-form {
+    background: #fff;
+    width: 700px;
+    margin: 0 auto;
+    padding: 80px 130px;
+    border-radius: 10px;
+    border: 2px solid #e2ddd7;
+}
+
+/* グループ */
+.register-form__group {
+    margin-bottom: 50px;
+}
+
+/* ラベル */
+.register-form__title {
+    display: block;
+    font-size: 20px;
+    color: #6b5648;
+    margin-bottom: 15px;
+}
+
+/* 入力欄 */
+.register-form__input {
+    width: 100%;
+    padding: 18px 20px;
+    background: #f4f1ee;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #6b5648;
+    outline: none;
+}
+
+/* placeholder 色 */
+.register-form__input::placeholder {
+    color: #c7beb6;
+}
+
+/* ホバー時(正常時のみ) */
+.register-form__input:hover:not(.input-error) {
+    background-color: #efebe8;
+}
+
+/* オートフィル対策 */
+input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px #f9f7f5 inset;
+    -webkit-text-fill-color: #6b5648;
+}
+
+/* エラー時の枠＆背景 */
+.input-error {
+    border: 1px solid #d9534f;
+    background: #fdeaea;
+}
+
+/* エラーリスト */
+.register-form__error-list {
+    margin: 6px 0 0;
+    padding-left: 22px;
+    color: #d9534f;
+    font-size: 14px;
+}
+
+/* ボタン */
+.register-form__button {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.register-form__button-input {
+    display: block;
+    width: 170px;
+    padding: 14px 0;
+    background-color: #8b6f57;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.register-form__button-input:hover {
+    opacity: 0.85;
+}

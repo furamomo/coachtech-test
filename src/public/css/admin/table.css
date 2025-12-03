@@ -1,0 +1,152 @@
+/* テーブル */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.admin-table__head {
+    background: #8e7a65;
+    color: #fff;
+}
+
+.admin-table__header {
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.admin-table__row {
+    border-bottom: 1px solid #e5dbd3;
+}
+
+.admin-table tbody tr:hover {
+    background-color: #f7f4f1;
+    transition: background-color 0.2s ease;
+}
+
+.admin-table__data {
+    padding: 18px 20px;
+    color: #6b5648;
+}
+
+/* 詳細ボタン */
+.admin-table__detail-button {
+    padding: 6px 14px;
+    border: 1px solid #d5cdc4;
+    background: #fff;
+    color: #6b5648;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.admin-table__button:hover {
+    opacity: 0.7;
+}
+
+/* 詳細モーダル */
+.admin-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.admin-modal:target {
+    display: block;
+}
+
+.admin-modal__content {
+    background: #fff;
+    width: 720px;
+    height: 85%;
+    margin: 70px auto;
+    padding: 45px 70px;
+    position: relative;
+    color: #6b5648;
+    border: 2px solid #d8cec5;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.12);
+    position: relative;
+    font-size: 15px;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.admin-modal__content-inner {
+    margin: 40px;
+    flex: 1;
+    overflow-y: auto;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+/* ×ボタン */
+.admin-modal__close {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+}
+
+.admin-modal__close-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #6a4d38;
+    color: #6a4d38;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.admin-modal__close-text:hover {
+    background-color: #f7f6f5;
+}
+
+/* モーダル内テーブル */
+.admin-modal__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+.admin-modal__header {
+    width: 180px;
+    padding: 10px 0;
+    font-weight: bold;
+    vertical-align: top;
+    text-align: left;
+}
+
+.admin-modal__data {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+.admin-modal__delete-form {
+    margin-top: 20px;
+}
+
+/* 削除ボタン */
+.admin-modal__delete-button {
+    display: block;
+    margin: 0 auto 20px;
+    width: 90px;
+    padding: 8px 0;
+    background: #d9534f;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.admin-modal__delete-button:hover {
+    opacity: 0.8;
+}
