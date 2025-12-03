@@ -25,6 +25,12 @@
 ・phpMyAdmin
 
 
+## コーディング規約
+
+コーディング規約は下記URLを参照しました：
+https://estra-inc.notion.site/1263a94a2aab4e3ab81bad77db1cf186  
+
+
 ## ER図
 
 [ER図](./er.png)
